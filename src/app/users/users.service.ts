@@ -1,23 +1,17 @@
-import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { HttpHeaders } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { UsersItem } from './user.model';
 
-
-import { Observable } from 'rxjs';
-import { catchError } from 'rxjs/operators';
-
-
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class UsersService {
-  usersUrl = 'https://api.github.com/users';  // URL to web api
-  
 
   constructor(
-    private http: HttpClient) { 
+    private http: HttpClient) { }
 
-    }
-    
     getUsers () {
-        var teste = this.http.get<string>("usersUrl")
+      var usersUrl = 'https://api.github.com/users';  // URL to web api
+      return this.http.get<UsersItem[]>(usersUrl)
     }
-  }
+}

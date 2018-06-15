@@ -1,6 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator, MatSort } from '@angular/material';
-import { UsersDataSource } from './users-datasource';
+import { UsersService } from './users.service';
+import { DataSource } from '@angular/cdk/table';
+import { UsersItem } from './user.model';
+import { Observable } from 'rxjs';
+import { MatPaginator } from '@angular/material';
 
 @Component({
   selector: 'users',
@@ -9,13 +12,29 @@ import { UsersDataSource } from './users-datasource';
 })
 export class UsersComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
-  dataSource: UsersDataSource;
-
-  /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  dataSource = new UserDataSource(this.paginator, this.userService)
+  displayedColumns = ['id', 'login'];
+  constructor(private userService: UsersService) { }
 
   ngOnInit() {
-    this.dataSource = new UsersDataSource(this.paginator, this.sort);
   }
+
 }
+
+export class UserDataSource extends DataSource<any> {
+  constructor(private paginator: MatPaginator,private userService: UsersService) {
+    super();
+  }
+  
+  connect(): Observable<UsersItem[]> {
+    
+    console.log(this.paginator)
+    return this.userService.getUsers();
+  }
+
+  disconnect() {}
+ 
+}
+
+
+/** Simple sort comparator for example ID/Name columns (for client-side sorting). */
