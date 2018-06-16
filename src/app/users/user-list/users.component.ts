@@ -1,11 +1,12 @@
-import { Component, OnInit, ViewChild, Inject } from '@angular/core';
+import { Component, OnInit, ViewChild, Inject, Input } from '@angular/core';
 
 import { DataSource } from '@angular/cdk/table';
 import { UsersItem } from '../user.model';
 import { Observable } from 'rxjs';
 import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { UsermodalDialog } from '../user_modal/usermodal.component';
+import { UsermodalDialog } from '../user-modal/usermodal.component';
 import { UsersService } from '../users.service';
+import { Overlay } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'users',
@@ -19,6 +20,7 @@ export class UsersComponent implements OnInit {
 
   ngOnInit() {
   }
+
 
   openDialog(row): void {
     let dialoRef = this.dialog.open(UsermodalDialog, {

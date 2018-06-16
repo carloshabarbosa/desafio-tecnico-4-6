@@ -1,0 +1,19 @@
+<mat-dialog-content>
+    <div>
+        <div>
+            <strong>Id: </strong>
+            {{data.id}}
+        </div>
+        <p></p>
+        <div>
+            <strong>Login: </strong>
+            {{data.login}}
+        </div>
+        <p></p>
+        <div>
+            <strong>Url do perfil: </strong>
+            <a href={{data.html_url}}>{{data.html_url}}</a>
+        </div>
+        <repo-list userName={{data.login}}></repo-list>
+    </div>
+</mat-dialog-content>
