@@ -1,0 +1,33 @@
+<div>
+    <div>
+        <strong>Id: </strong>
+        {{data.id}}
+    </div>
+    <p></p>
+    <div>
+        <strong>Login: </strong>
+        {{data.login}}
+    </div>
+    <p></p>
+    <div>
+        <strong>Url do perfil: </strong>
+        <a href={{data.html_url}}>{{data.html_url}}</a>
+    </div>
+    <div style="margin-top: 20px">
+        <table style="width: 100%">
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Url</th>
+            </tr>
+            <tbody>
+                <tr *ngFor="let item of repos">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td><a href={{item.clone_url}}>{{item.clone_url}}</a></td>
+                    
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+</div>

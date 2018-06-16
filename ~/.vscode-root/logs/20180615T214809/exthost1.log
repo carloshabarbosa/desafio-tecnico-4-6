@@ -1,0 +1,38 @@
+[2018-06-15 21:48:13.851] [exthost1] [info] extension host started
+[2018-06-15 21:48:13.888] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-06-15 21:48:13.888] [exthost1] [info] ExtensionService#loadCommonJSModule /snap/vscode/37/usr/share/code/resources/app/extensions/emmet/out/extension
+[2018-06-15 21:48:14.593] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-06-15 21:48:14.593] [exthost1] [info] ExtensionService#loadCommonJSModule /snap/vscode/37/usr/share/code/resources/app/extensions/git/out/main
+[2018-06-15 21:48:14.860] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-06-15 21:48:14.860] [exthost1] [info] ExtensionService#loadCommonJSModule /snap/vscode/37/usr/share/code/resources/app/extensions/merge-conflict/out/extension
+[2018-06-15 21:48:14.876] [exthost1] [info] ExtensionService#_doActivateExtension naumovs.color-highlight {"startup":true,"activationEvent":"*"}
+[2018-06-15 21:48:14.876] [exthost1] [info] ExtensionService#loadCommonJSModule /home/leca/.vscode/extensions/naumovs.color-highlight-2.3.0/dist/extension
+[2018-06-15 21:48:14.918] [exthost1] [info] ExtensionService#_doActivateExtension robertohuertasm.vscode-icons {"startup":true,"activationEvent":"*"}
+[2018-06-15 21:48:14.918] [exthost1] [info] ExtensionService#loadCommonJSModule /home/leca/.vscode/extensions/robertohuertasm.vscode-icons-7.23.0/out/src/
+[2018-06-15 21:48:15.054] [exthost1] [info] eager extensions activated
+[2018-06-15 21:48:23.949] [exthost1] [info] extension host started
+[2018-06-15 21:48:23.995] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-06-15 21:48:23.996] [exthost1] [info] ExtensionService#loadCommonJSModule /snap/vscode/37/usr/share/code/resources/app/extensions/emmet/out/extension
+[2018-06-15 21:48:24.077] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-06-15 21:48:24.077] [exthost1] [info] ExtensionService#loadCommonJSModule /snap/vscode/37/usr/share/code/resources/app/extensions/git/out/main
+[2018-06-15 21:48:24.304] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-06-15 21:48:24.304] [exthost1] [info] ExtensionService#loadCommonJSModule /snap/vscode/37/usr/share/code/resources/app/extensions/merge-conflict/out/extension
+[2018-06-15 21:48:24.317] [exthost1] [info] ExtensionService#_doActivateExtension naumovs.color-highlight {"startup":true,"activationEvent":"*"}
+[2018-06-15 21:48:24.317] [exthost1] [info] ExtensionService#loadCommonJSModule /home/leca/.vscode/extensions/naumovs.color-highlight-2.3.0/dist/extension
+[2018-06-15 21:48:24.361] [exthost1] [info] ExtensionService#_doActivateExtension robertohuertasm.vscode-icons {"startup":true,"activationEvent":"*"}
+[2018-06-15 21:48:24.361] [exthost1] [info] ExtensionService#loadCommonJSModule /home/leca/.vscode/extensions/robertohuertasm.vscode-icons-7.23.0/out/src/
+[2018-06-15 21:48:24.497] [exthost1] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":true,"activationEvent":"workspaceContains:package.json"}
+[2018-06-15 21:48:24.497] [exthost1] [info] ExtensionService#loadCommonJSModule /snap/vscode/37/usr/share/code/resources/app/extensions/npm/out/main
+[2018-06-15 21:48:24.581] [exthost1] [info] eager extensions activated
+[2018-06-15 21:49:13.393] [exthost1] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"activationEvent":"onLanguage:html"}
+[2018-06-15 21:49:13.393] [exthost1] [info] ExtensionService#loadCommonJSModule /snap/vscode/37/usr/share/code/resources/app/extensions/html-language-features/client/out/htmlMain
+[2018-06-15 21:49:13.865] [exthost1] [info] ExtensionService#_doActivateExtension vscode.css-language-features {"startup":false,"activationEvent":"onLanguage:css"}
+[2018-06-15 21:49:13.865] [exthost1] [info] ExtensionService#loadCommonJSModule /snap/vscode/37/usr/share/code/resources/app/extensions/css-language-features/client/out/cssMain
+[2018-06-15 22:01:53.036] [exthost1] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"activationEvent":"onLanguage:typescript"}
+[2018-06-15 22:01:53.036] [exthost1] [info] ExtensionService#loadCommonJSModule /snap/vscode/37/usr/share/code/resources/app/extensions/extension-editing/out/extension
+[2018-06-15 22:01:53.075] [exthost1] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:typescript"}
+[2018-06-15 22:01:53.076] [exthost1] [info] ExtensionService#loadCommonJSModule /snap/vscode/37/usr/share/code/resources/app/extensions/typescript-language-features/out/extension
+[2018-06-15 22:02:00.764] [exthost1] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-06-15 22:02:00.764] [exthost1] [info] ExtensionService#loadCommonJSModule /snap/vscode/37/usr/share/code/resources/app/extensions/configuration-editing/out/extension
+[2018-06-15 22:02:00.785] [exthost1] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-06-15 22:02:00.786] [exthost1] [info] ExtensionService#loadCommonJSModule /snap/vscode/37/usr/share/code/resources/app/extensions/json-language-features/client/out/jsonMain

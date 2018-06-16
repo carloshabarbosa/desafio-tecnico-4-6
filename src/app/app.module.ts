@@ -3,14 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UsersComponent } from './users/users.component';
-import { MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
+
+import { MatTableModule, MatPaginatorModule, MatSortModule, MatTreeModule} from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
+import { UsersComponent } from './users/user_list/users.component';
+
+import {MatDialog, MAT_DIALOG_DATA, MatDialogRef, MatDialogModule} from  '@angular/material/dialog';
+
+import { UsermodalDialog } from './users/user_modal/usermodal.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsersComponent
+    UsersComponent,
+    UsermodalDialog
   ],
   imports: [
     BrowserModule,
@@ -18,10 +25,14 @@ import { HttpClientModule } from '@angular/common/http';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule, 
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule, 
+    MatTreeModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent], 
+  entryComponents:[UsermodalDialog],
+  
 })
 export class AppModule { }
 

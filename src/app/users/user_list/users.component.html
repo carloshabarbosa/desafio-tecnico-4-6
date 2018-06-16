@@ -1,0 +1,14 @@
+<div>
+    <mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef> Id </mat-header-cell>
+        <mat-cell *matCellDef="let user"> {{user.id}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="login">
+        <mat-header-cell *matHeaderCellDef> Login </mat-header-cell>
+        <mat-cell *matCellDef="let user"> {{user.login}} </mat-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row (click)="openDialog(row)" *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </div>
