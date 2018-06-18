@@ -14,14 +14,16 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+O projeto foi desenvolvido utilizando angular 6.0.5 (latest), angular material, typescript 
 
-## Running end-to-end tests
+As funcionalidades foram dividias em componentes
+	
+	- users/user-list
+		- É a grid onde lista os usuários do github
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+	- users/user-modal
+		- É a pop-up que abre quando se clica em uma linha da lista de usuários
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+	- users/repo-list
+		- É a grid onde lista os repositórios do usuário selecionando na primeira lista
